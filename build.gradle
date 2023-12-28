@@ -46,10 +46,11 @@ dependencies {
     implementation 'org.mapstruct:mapstruct:1.5.3.Final'
     annotationProcessor 'org.mapstruct:mapstruct-processor:1.5.3.Final'
     //Querydsl추가
-    implementation'com.querydsl:querydsl-jpa:5.0.0:jakarta'
-    annotationProcessor"com.querydsl:querydsl-apt:${dependencyManagement.importedProperties['querydsl.version']}:jakarta"
-    annotationProcessor"jakarta.annotation:jakarta.annotation-api"
-    annotationProcessor"jakarta.persistence:jakarta.persistence-api"
+    implementation 'com.querydsl:querydsl-jpa:5.0.0:jakarta'
+    annotationProcessor "com.querydsl:querydsl-apt:${dependencyManagement.importedProperties['querydsl.version']}:jakarta"
+    annotationProcessor 'jakarta.annotation:jakarta.annotation-api'
+    annotationProcessor 'jakarta.persistence:jakarta.persistence-api'
+
 
     //AWS
     implementation 'software.amazon.awssdk:s3:2.21.26'

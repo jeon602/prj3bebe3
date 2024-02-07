@@ -12,7 +12,7 @@ import lombok.Setter;
 @Table( schema = "prj3")
 @Getter @Setter
 @NoArgsConstructor
-public class Comment extends BaseTimeEntity{
+public class    Comment extends BaseTimeEntity{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "comment_id")

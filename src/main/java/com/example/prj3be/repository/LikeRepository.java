@@ -9,7 +9,8 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface LikeRepository extends JpaRepository<Likes, Long> {
+public interface
+LikeRepository extends JpaRepository<Likes, Long> {
 
     boolean existsByBoardIdAndMemberId(Long boardId, Long id);
 
